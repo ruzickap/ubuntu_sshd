@@ -14,7 +14,7 @@ Latest Ubuntu LTS running SSH daemon inside.
 
 or
 
-`docker run -d -e SSH_PUBLIC_KEYS="<key1>\n<key2>\n<key3>..." peru/ubuntu_sshd`
+`docker run -d -e SSHD_PORT="22" -e SSH_PUBLIC_KEYS="<key1>\n<key2>\n<key3>..." peru/ubuntu_sshd`
 
 
 ## Example:

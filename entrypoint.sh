@@ -25,6 +25,12 @@ install -d -m 0700 ~/.ssh
 echo -e "$SSH_PUBLIC_KEYS" > ~/.ssh/authorized_keys
 chmod 0600 ~/.ssh/authorized_keys
 
+echo "*** Changing  /etc/ssh/sshd_config if necessary"
+if [ "x$SSHD_PORT" != "x" ]; then
+  echo "Port $SSHD_PORT" >> /etc/ssh/sshd_config
+fi
+
+
 stop() {
     echo "*** Received SIGINT or SIGTERM. Shutting down $DAEMON"
     # Get PID
