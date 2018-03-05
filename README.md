@@ -1,3 +1,6 @@
+[![Docker pulls](https://img.shields.io/docker/pulls/peru/ubuntu_sshd.svg)](https://hub.docker.com/r/peru/ubuntu_sshd/)
+[![Docker Build](https://img.shields.io/docker/automated/peru/ubuntu_sshd.svg)](https://hub.docker.com/r/peru/ubuntu_sshd/)
+
 # Ubuntu Docker image running SSHd daemon
 
 SSH server running on Ubuntu inside Docker. [Docker Hub page](https://hub.docker.com/r/peru/ubuntu_sshd/).
